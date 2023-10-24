@@ -6,10 +6,14 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { NgFor } from '@angular/common';
 import { NgClass } from '@angular/common';
+import { OurExperiencesComponent } from './our-experiences/our-experiences.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OurExperiencesComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
