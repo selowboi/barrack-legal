@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import {ChangeDetectionStrategy, ChangeDetectorRef, Component} from '@angular/core';
 
 @Component({
   selector: 'app-our-experiences',
   templateUrl: './our-experiences.component.html',
-  styleUrls: ['./our-experiences.component.css']
+  styleUrls: ['./our-experiences.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class OurExperiencesComponent {
 
@@ -93,8 +94,16 @@ export class OurExperiencesComponent {
     },
   ]
 
-  onClickType(item: any): void {
+  contents: any = this.lists[0].contents
 
+  constructor(
+    private ref: ChangeDetectorRef,
+  ) {
+  }
+
+  onClickType(item: any): void {
+    this.contents =  this.lists.find(type => type.type === item.key)?.contents
+    this.ref.detectChanges()
   }
 
 

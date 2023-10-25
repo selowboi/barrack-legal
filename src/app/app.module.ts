@@ -8,12 +8,14 @@ import { NgFor } from '@angular/common';
 import { NgClass } from '@angular/common';
 import { OurExperiencesComponent } from './our-experiences/our-experiences.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OurExperiencesComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

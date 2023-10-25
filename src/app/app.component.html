@@ -2,7 +2,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white justify-content-between" id="home">
         <div class="flex-start ms-5">
-            <img src="./assets/test.jpg" width="100px" height="100px" alt="">
+            <img src="assets/logo.png" width="100px" height="100px" alt="">
         </div>
         <div class="flex-end">
             <button
@@ -22,14 +22,20 @@
                 <a class="nav-link" aria-current="page" href="#home">Home</a>
                 </li>
                 <li class="nav-item me-4">
-                <a class="nav-link" href="#aboutcompany">Features</a>
+                <a class="nav-link" href="#aboutcompany">About Company</a>
                 </li>
                 <li class="nav-item me-4">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">Our Management</a>
                 </li>
                 <li class="nav-item me-4">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Our Clients</a>
                 </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#">Our Experiences</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#">Public Cases</a>
+              </li>
             </ul>
             </div>
         </div>
@@ -43,27 +49,45 @@
         background-image: url('./assets/test.jpg'); height: 800px;">
         <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white">
-            <h1 class="mb-3">Heading</h1>
-            <h4 class="mb-3">Subheading</h4>
+            <h1 class="mb-3">
+              <img src="assets/logo.png"
+                   width="300"
+                   height="300"
+                   alt="logo barrack legal">
+            </h1>
+            <h1 class="mb-3 fw-bolder">
+              IN ASSOCIATION WITH EDGE LAW
+            </h1>
+              <h4>
+                Graha Kana Lt. 5 Unit 05, Jl. Angkasa Blok B-16 Kav. 4, <br>
+                Gunung Sahari Selatan, Kemayoran, Jakarta Pusat, <br>
+                DKI Jakarta, Indonesia 10720
+              </h4>
+              <h4 class="mt-5">law@baracklegal.com | (+62 21)-2605-8325</h4>
             </div>
         </div>
     </div>
     <!-- Background image -->
   </header>
   <body>
-    <div class="d-flex justify-content-between mt-5 ms-5" id="aboutcompany">
+    <div class="p-md-5">
+      <div class="d-flex justify-content-between mt-5 ms-5" id="aboutcompany">
         <div>
-            <img src="./assets/test.jpg" class="rounded" alt="" width="500px" height="500px">
+          <img src="assets/logo-dark.png" class="rounded" alt="" width="300px" height="300px">
+          <h3 class="text-center">Growing With Us</h3>
         </div>
         <div class="row justify-content-center align-self-center ms-3">
-           <p>Established in 2021, Barack Legal Indonesia has become a multi-services law firm, striving to provide the best legal services and business assistances in Indonesia. To provide multidisciplinary legal solutions with strategic-driven and on-point legal advice for clients, Barack Legal has been working closely with EDGE Law as its exclusive independent lawfirm.<br><br>
+          <p>Established in 2021, Barack Legal Indonesia has become a multi-services law firm, striving to provide the best legal services and business assistances in Indonesia. To provide multidisciplinary legal solutions with strategic-driven and on-point legal advice for clients, Barack Legal has been working closely with EDGE Law as its exclusive independent lawfirm.<br><br>
 
             With depth of knowledge and experience in our lawyers' respective areas of practice, we are operating to find the finest legal solution at our core that meet clients' long-term objectives under a specified core values, and client service standard.<br><br>
 
             Constantly committing to excellence, together with EDGE Law, Barack Legal Indonesia is here with the specialties includes: corporate legal, compliances & licensing, dispute resolutions, intellectual property rights, and any other legal services.<br><br>
-        </p>
+          </p>
         </div>
+      </div>
+
     </div>
+
     <div class="container-fluid py-4 bg-warning my-5">
         <div class="row my-5">
             <div class="col-md-6 border-end border-5">
@@ -127,4 +151,5 @@
 
   <app-our-experiences></app-our-experiences>
   <app-contact></app-contact>
+  <app-footer></app-footer>
   </body>
