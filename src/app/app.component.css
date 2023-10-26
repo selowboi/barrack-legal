@@ -1,3 +1,7 @@
 .available-bool{
     background-color: chartreuse;
 }
+
+.text-justify {
+  text-align: justify;
+}
