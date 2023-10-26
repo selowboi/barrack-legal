@@ -25,13 +25,13 @@
                 <a class="nav-link" href="#aboutcompany">About Company</a>
                 </li>
                 <li class="nav-item me-4">
-                <a class="nav-link" href="#">Our Management</a>
+                <a class="nav-link" href="#ourmanagement">Our Management</a>
                 </li>
                 <li class="nav-item me-4">
-                <a class="nav-link" href="#">Our Clients</a>
+                <a class="nav-link" href="#ourclient">Our Clients</a>
                 </li>
               <li class="nav-item me-4">
-                <a class="nav-link" href="#">Our Experiences</a>
+                <a class="nav-link" href="#ourexperience">Our Experiences</a>
               </li>
               <li class="nav-item me-4">
                 <a class="nav-link" href="#">Public Cases</a>
@@ -44,9 +44,8 @@
 
     <!-- Background image -->
     <div
-      class="p-5 text-center bg-image"
-      style="
-        background-image: url('./assets/test.jpg'); height: 800px;">
+      class="p-5 text-center bg-image landscape"
+      style="background-image: url('./assets/background barracklegal bw.jpg'); height: 900px;">
         <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white">
             <h1 class="mb-3">
@@ -72,7 +71,7 @@
   <body>
     <div class="p-md-5">
       <div class="d-flex justify-content-between mt-5 ms-5" id="aboutcompany">
-        <div>
+        <div class="my-5">
           <img src="assets/logo-dark.png" class="rounded" alt="" width="300px" height="300px">
           <h3 class="text-center">Growing With Us</h3>
         </div>
@@ -88,9 +87,9 @@
 
     </div>
 
-    <div class="container-fluid py-4 bg-warning my-5">
+    <div class="container-fluid py-4 my-5" style="background-color:#d4d4d4;">
         <div class="row my-5">
-            <div class="col-md-6 border-end border-5">
+            <div class="col-md-6 border-end border-3 border-white">
                 <h1 class="text-center pt-4 pb-5">Our Vision</h1>
                 <h5 class="text-left ps-3 pe-3 pb-5">Aiming to be a leading Indonesian law firm, being the best problem solver for clients' needs.</h5>
             </div>
@@ -101,55 +100,89 @@
         </div>
     </div>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div id="ourmanagement" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators" style="bottom: -50px;">
+        <button type="button" data-bs-target="#ourmanagement" data-bs-slide-to="0" class="active bg-dark" aria-current="true" aria-label="Slide 1" style="width: 70px;"></button>
+        <button type="button" data-bs-target="#ourmanagement" data-bs-slide-to="1" aria-label="Slide 2" class="bg-dark" style="width: 70px;"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./assets/test.jpg" class="d-block w-100" alt="...">
+          <div class="card mb-3 border-0 d-block mx-auto" style="max-width: 55rem;">
+            <div class="row no-gutters">
+              <div class="col">
+                <img src="assets/person.jpg" class="card-img" alt="..." >
+              </div>
+              <div class="col" style="background-color:#d4d4d4; border-radius:.25rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text text-left">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text text-left"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="carousel-item">
-          a
-        </div>
-        <div class="carousel-item">
-          b
+          <div class="card mb-3 border-0 d-block mx-auto" style="max-width: 55rem;">
+            <div class="row no-gutters">
+              <div class="col">
+                <img src="assets/person.jpg" class="card-img" alt="...">
+              </div>
+              <div class="col" style="background-color:#d4d4d4; border-radius:.25rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a naturer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <div class="carousel-control-next" data-bs-target="#ourmanagement" data-bs-slide="next">
+        <button class="carousel-control-next-icon bg-dark btn" type="button" aria-hidden="true"></button>
         <span class="visually-hidden">Next</span>
-      </button>
+      </div>
     </div>
-    <div class="container-fluid">
+
+
+    <div class="container-fluid my-5 py-5" id="ourclient">
       <div class="container text-center">
         <div class="row">
           <div class="col">
               <h1>Our Clients</h1>
           </div>
         </div>
-        <div class="row">
-          <div class="col"><img src="./assets/test.jpg" width="100px" height="100px" alt="..."></div>
-          <div class="col"><img src="./assets/test.jpg" width="100px" height="100px" alt="..."></div>
-          <div class="col"><img src="./assets/test.jpg" width="100px" height="100px" alt="..."></div>
-          <div class="col"><img src="./assets/test.jpg" width="100px" height="100px" alt="..."></div>
-          <div class="col"><img src="./assets/test.jpg" width="100px" height="100px" alt="..."></div>
-          <div class="col"><img src="./assets/test.jpg" width="100px" height="100px" alt="..."></div>
+        <div class="row my-5 py-2 justify-content-center align-items-center">
+          <div class="col"><img src="./assets/client/finnet.png" style="cursor: pointer;" alt="..." height="80px" onclick="window.open('https://www.finpay.id/', '_blank');"></div>
+          <div class="col"><img src="./assets/client/Mitratel.png" style="cursor: pointer;" alt="..." height="80px" onclick="window.open('https://www.mitratel.co.id/', '_blank');"></div>
+          <div class="col"><img src="./assets/client/Tristar.png" alt="..." height="80px"></div>
+          <div class="col"><img src="./assets/client/VAI.png" alt="..." height="80px"></div>
         </div>
-        <div class="row">
-          <div class="col"><img src="./assets/test.jpg" width="100px" height="100px" alt="..."></div>
-          <div class="col"><img src="./assets/test.jpg" width="100px" height="100px" alt="..."></div>
-          <div class="col"><img src="./assets/test.jpg" width="100px" height="100px" alt="..."></div>
-          <div class="col"><img src="./assets/test.jpg" width="100px" height="100px" alt="..."></div>
-          <div class="col"><img src="./assets/test.jpg" width="100px" height="100px" alt="..."></div>
-          <div class="col"><img src="./assets/test.jpg" width="100px" height="100px" alt="..."></div>
+        <div class="row my-5 py-2 justify-content-center align-items-center">
+          <div class="col"><img src="./assets/client/inti persada.png" style="cursor: pointer;" alt="..." height="80px" onclick="window.open('https://www.persadanusantara.co.id/', '_blank');"></div>
+          <div class="col"><img src="./assets/client/Phintraco.png" style="cursor: pointer;" alt="..." height="80px" onclick="window.open('https://phintracosekuritas.com/', '_blank');"></div>
+          <div class="col"><img src="./assets/client/Josi.png" alt="..." height="80px"></div>
+          <div class="col"><img src="./assets/client/Azeta.png" alt="..." height="80px"></div>
+        </div>
+        <div class="row my-5 py-2 justify-content-center align-items-center">
+          <div class="col"><img src="./assets/client/Protelindo.png" style="cursor: pointer;" alt="..." height="80px" onclick="window.open('https://www.protelindo.net/home', '_blank');"></div>
+          <div class="col"><img src="./assets/client/Bach.png" style="cursor: pointer;" alt="..." height="80px" onclick="window.open('https://www.bach.co.id/bach-multi-infrastruktur/', '_blank');"></div>
+          <div class="col"><img src="./assets/client/PUPR.png" style="cursor: pointer;" alt="..." height="80px" onclick="window.open('https://pu.go.id/', '_blank');"></div>
+          <div class="col"><img src="./assets/client/kreddo.png" style="cursor: pointer;" alt="..." height="80px" onclick="window.open('https://kreddo.com/', '_blank');"></div>
+          <div class="col"><img src="./assets/client/MBS.png" alt="..." height="80px"></div>
+        </div>
+        <div class="row my-5 py-2 justify-content-center align-items-center">
+          <div class="col"><img src="./assets/client/UI.png" style="cursor: pointer;" alt="..." height="120px" onclick="window.open('https://www.ui.ac.id/', '_blank');"></div>
+          <div class="col"><img src="./assets/client/Kominfo.png" style="cursor: pointer;" alt="..." height="120px" onclick="window.open('https://www.kominfo.go.id/', '_blank');"></div>
+          <div class="col"><img src="./assets/client/Layton.png" style="cursor: pointer;" alt="..." height="120px" onclick="window.open('https://layton.co.id/', '_blank');"></div>
+          <div class="col"><img src="./assets/client/paul& co.png" style="cursor: pointer;" alt="..." height="120px" onclick="window.open('https://www.paulasia.com/id/', '_blank');"></div>
+          <div class="col"><img src="./assets/client/telkom property.png" style="cursor: pointer;" alt="..." height="120px" onclick="window.open('https://www.telkomproperty.co.id/', '_blank');"></div>
         </div>
       </div>
     </div>
 
-  <app-our-experiences></app-our-experiences>
+  <app-our-experiences id="ourexperience"></app-our-experiences>
   <app-contact></app-contact>
   <app-footer></app-footer>
   </body>
