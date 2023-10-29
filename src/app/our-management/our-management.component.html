@@ -1,4 +1,4 @@
-<div id="ourmanagement" class="carousel slide" data-bs-ride="true">
+<div id="ourmanagement" class="carousel slide" data-bs-ride="true" style="height: 700px;">
     <div class="carousel-indicators" style="bottom: -50px;">
       <button type="button" data-bs-target="#ourmanagement" data-bs-slide-to="0" class="active bg-dark" aria-current="true" aria-label="Slide 1" style="width: 70px;"></button>
       <button type="button" data-bs-target="#ourmanagement" data-bs-slide-to="1" aria-label="Slide 2" class="bg-dark" style="width: 70px;"></button>
@@ -9,7 +9,8 @@
           <div class="card mb-3 border-0 d-block mx-auto" style="max-width: 75rem;">
             <div class="row no-gutters">
               <div class="col">
-                <img src="{{ management.image }}" class="card-img" alt="{{ management.name }}" >
+                <img src="{{ management.image }}" class="card-img h-100 object-fit-cover"
+                     alt="{{ management.name }}" >
               </div>
               <div class="col" style="background-color:#d4d4d4; border-radius:.25rem;">
                 <div class="card-body">
@@ -33,11 +34,11 @@
       </ng-container>
     </div>
     <div class="carousel-control-prev" data-bs-target="#ourmanagement" data-bs-slide="prev">
-      <button class="carousel-control-prev-icon bg-dark btn" type="button" aria-hidden="true"></button>
+      <button class="carousel-control-prev-icon bg-dark btn rounded-circle" type="button" aria-hidden="true"></button>
       <span class="visually-hidden">Previous</span>
     </div>
     <div class="carousel-control-next" data-bs-target="#ourmanagement" data-bs-slide="next">
-      <button class="carousel-control-next-icon bg-dark btn" type="button" aria-hidden="true"></button>
+      <button class="carousel-control-next-icon bg-dark btn rounded-circle" type="button" aria-hidden="true"></button>
       <span class="visually-hidden">Next</span>
     </div>
   </div>
