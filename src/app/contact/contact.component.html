@@ -42,41 +42,79 @@
           <h6 class="text-center fw-normal">We will get back to you as soon as possible.</h6>
         </div>
       </div>
-      <form action="" class="row">
+      <form class="row" [formGroup]="form" (ngSubmit)="onSubmit()">
         <div class="col-md-12 input-group">
-          <label for="full_name" class="form-label">Full Name</label>
+          <label for="full_name" class="form-label">Full Name<span class="text-danger">*</span></label>
           <input type="text"
                  id="full_name"
+                 formControlName="full_name"
                  name="full_name" class="w-100 border-black form-control" placeholder="John Doe" required>
+          <div
+            class="text-danger"
+            *ngIf="form.get('full_name').hasError('required') && form.get('full_name').touched">
+            Full Name is required.
+          </div>
         </div>
         <div class="col-md-12 input-group mt-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" id="email" name="email" class="w-100 border-black form-control" placeholder="johndoe@Mail.com" required>
+          <label for="email" class="form-label">Email<span class="text-danger">*</span></label>
+          <input type="email" id="email"
+                 formControlName="email"
+                 name="email" class="w-100 border-black form-control" placeholder="johndoe@Mail.com" required>
+          <div
+            class="text-danger"
+            *ngIf="form.get('email').hasError('required') && form.get('email').touched">
+            Email is required.
+          </div>
+          <div
+            class="text-danger"
+            *ngIf="form.get('email').hasError('email') && form.get('email').touched">
+            Invalid email format.
+          </div>
         </div>
         <div class="col-md-12 input-group mt-3">
-          <label for="phone_number" class="form-label">Phone Number</label>
+          <label for="phone_number" class="form-label">Phone Number<span class="text-danger">*</span></label>
           <input type="text"
                  name="phone_number"
                  id="phone_number"
+                 formControlName="phone_number"
                  class="w-100 border-black form-control" placeholder="08123456789" required>
+          <div
+            class="text-danger"
+            *ngIf="form.get('phone_number').hasError('required') && form.get('phone_number').touched">
+            Phone number is required.
+          </div>
         </div>
         <div class="col-md-12 input-group mt-3">
-          <label for="subject" class="form-label">Subject</label>
+          <label for="subject" class="form-label">Subject<span class="text-danger">*</span></label>
           <input type="text"
                  id="subject"
                  name="subject"
+                 formControlName="subject"
                  class="w-100 border-black form-control" placeholder="subject" required>
+          <div
+            class="text-danger"
+            *ngIf="form.get('subject').hasError('required') && form.get('subject').touched">
+            Subject is required.
+          </div>
         </div>
         <div class="col-md-12 input-group mt-3">
-          <label for="message" class="form-label">Message</label>
+          <label for="message" class="form-label">Message<span class="text-danger">*</span></label>
           <textarea
             class="form-control border-black w-100"
             id="message"
+            formControlName="message"
             placeholder="message"
             name="message" cols="30" rows="10"></textarea>
+          <div
+            class="text-danger"
+            *ngIf="form.get('message').hasError('required') && form.get('message').touched">
+            Message is required.
+          </div>
         </div>
         <div class="col-md-12 input-group mt-3">
-          <button type="submit" class="btn btn-primary w-100">Submit</button>
+          <button type="submit"
+                  [disabled]="form.invalid"
+                  class="btn btn-primary w-100">Submit</button>
         </div>
 
       </form>

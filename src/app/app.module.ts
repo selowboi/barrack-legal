@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { NgFor } from '@angular/common';
 import { NgClass } from '@angular/common';
 import { OurExperiencesComponent } from './our-experiences/our-experiences.component';
@@ -13,6 +13,7 @@ import { HomeBackgroundComponent } from './home-background/home-background.compo
 import { OurCompanyComponent } from './our-company/our-company.component';
 import { OurManagementComponent } from './our-management/our-management.component';
 import { OurClientsComponent } from './our-clients/our-clients.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -23,15 +24,17 @@ import { OurClientsComponent } from './our-clients/our-clients.component';
     HomeBackgroundComponent,
     OurCompanyComponent,
     OurManagementComponent,
-    OurClientsComponent
+    OurClientsComponent,
+    HomeComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    NgFor,
-    NgClass
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        NgFor,
+        NgClass,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

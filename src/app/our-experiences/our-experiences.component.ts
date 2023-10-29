@@ -12,22 +12,27 @@ export class OurExperiencesComponent {
     {
       name: 'Dispute Resolutions',
       key: "DISPUTE_RESOLUTION",
+      expanded: false
     },
     {
       name: 'Corporate Legals',
       key: "CORPORATE_LEGALS",
+      expanded: false
     },
     {
       name: 'Compliances & Licensing',
       key: "COMPLIANCES_AND_LICENSING",
+      expanded: false
     },
     {
       name: 'Intellectual Property Rights',
       key: "INTELLECTUAL_PROPERTY_RIGHTS",
+      expanded: false
     },
     {
       name: 'Taxation',
       key: "TAXATION",
+      expanded: false
     },
   ]
 
@@ -106,5 +111,13 @@ export class OurExperiencesComponent {
     this.ref.detectChanges()
   }
 
+
+  expandItem(item: any) {
+    item.expanded = true;
+  }
+
+  collapseItem(item: any) {
+    item.expanded = false;
+  }
 
 }
