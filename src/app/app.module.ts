@@ -14,6 +14,7 @@ import { OurCompanyComponent } from './our-company/our-company.component';
 import { OurManagementComponent } from './our-management/our-management.component';
 import { OurClientsComponent } from './our-clients/our-clients.component';
 import { HomeComponent } from './home/home.component';
+import { KepailitanPtKaisoMaritimGlobalDalamPailitComponent } from './kepailitan-pt-kaiso-maritim-global-dalam-pailit/kepailitan-pt-kaiso-maritim-global-dalam-pailit.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HomeComponent } from './home/home.component';
     OurCompanyComponent,
     OurManagementComponent,
     OurClientsComponent,
-    HomeComponent
+    HomeComponent,
+    KepailitanPtKaisoMaritimGlobalDalamPailitComponent
   ],
     imports: [
         BrowserModule,
@@ -36,6 +38,6 @@ import { HomeComponent } from './home/home.component';
         ReactiveFormsModule
     ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

@@ -1,53 +1,43 @@
-<header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white justify-content-between" id="home">
-        <div class="flex-start ms-5">
-            <img src="assets/logo.png" width="100px" height="100px" alt="">
-        </div>
-        <div class="flex-end">
-            <button
-            class="navbar-toggler"
-            type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#navbarExample01"
-            aria-controls="navbarExample01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            >
-            <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarExample01">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item active me-4">
-                <a class="nav-link" aria-current="page" href="#home">Home</a>
-                </li>
-                <li class="nav-item me-4">
-                <a class="nav-link" href="#aboutcompany">About Company</a>
-                </li>
-                <li class="nav-item me-4">
-                <a class="nav-link" href="#ourmanagement">Our Management</a>
-                </li>
-                <li class="nav-item me-4">
-                <a class="nav-link" href="#ourclient">Our Clients</a>
-                </li>
-              <li class="nav-item me-4">
-                <a class="nav-link" href="#ourexperience">Our Experiences</a>
-              </li>
-              <li class="nav-item me-4">
-                <a class="nav-link" href="#">Public Cases</a>
-              </li>
-            </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar -->
-  </header>
-  <body>
-  <app-home-background></app-home-background>
-  <app-our-company></app-our-company>
-  <app-our-management></app-our-management>
-  <app-our-clients></app-our-clients>
-  <app-our-experiences id="ourexperience"></app-our-experiences>
-  <app-contact></app-contact>
-  <app-footer></app-footer>
-  </body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white justify-content-between" id="home">
+  <div class="flex-start ms-5">
+    <img src="assets/logo.png" width="100px" height="100px" alt="">
+  </div>
+  <div class="flex-end">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarExample01"
+      aria-controls="navbarExample01"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarExample01">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item active me-4">
+          <a class="nav-link" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item me-4">
+          <a class="nav-link" href="#aboutcompany">About Company</a>
+        </li>
+        <li class="nav-item me-4">
+          <a class="nav-link" href="#ourmanagement">Our Management</a>
+        </li>
+        <li class="nav-item me-4">
+          <a class="nav-link" href="#ourclient">Our Clients</a>
+        </li>
+        <li class="nav-item me-4">
+          <a class="nav-link" href="#ourexperience">Our Experiences</a>
+        </li>
+        <li class="nav-item me-4">
+          <a class="nav-link" routerLink="public-cases">Public Cases</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+<app-footer></app-footer>
