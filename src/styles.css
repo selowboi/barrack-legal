@@ -30,3 +30,7 @@
   font-weight: bold;
   /* Add additional styles for expanded state */
 }
+
+.text-justify {
+  text-align: justify;
+}
